@@ -1,4 +1,4 @@
-import React from 'react';
+	import React from 'react';
 import '../hojas-de-estilo/Testimonio.css';
 
 function Testimonio(props) {
@@ -10,7 +10,7 @@ function Testimonio(props) {
         alt='Foto de Emma'/>
       <div className='contenedor-texto-testimonio'>
         <p className='nombre-testimonio'>
-          <strong>{props.nombre}</strong> en {props.pais}
+          <strong>{props.nombre} </strong> en {props.pais}
         </p>
         <p className='cargo-testimonio'>
           {props.cargo} en <strong>{props.empresa}</strong>
@@ -20,5 +20,4 @@ function Testimonio(props) {
     </div>
   );
 }
-
 export default Testimonio;

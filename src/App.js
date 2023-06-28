@@ -1,5 +1,5 @@
 import './App.css';
-import Testimonio from './componentes/Testimonio';
+import Testimonio from './componentes/Testimonio.js';
 
 function App() {
   return (
