@@ -1,15 +1,19 @@
 import './App.css';
-import animeLogo from './imagenes/anime-logo.jpg';
 import Boton from './componentes/Boton';
+import Contador from './componentes/Contador';
+import animeLogo from './imagenes/anime-logo.jpg';
+import {useState} from 'react';
 
 function App() {
 
+  const [numClics, setNumClics] = useState(0);
+
   const manejarClick = () => {
-    console.log('Clic');
+    setNumClics(numClics + 1);
   }
 
   const reiniciarContador = () => {
-     console.log('Reiniciar');
+   setNumClics(0);
   }
 
   return (
@@ -21,10 +25,13 @@ function App() {
      alt='Logo de Anime' />
       </div>
       <div className='contenedor-principal'>
+        <Contador numClics={numClics}/>
+
         <Boton
         texto='Clic'
         esBotonDeClic={true}
         manejarClick={manejarClick} />
+
         <Boton
         texto='Reiniciar'
         esBotonDeClic={false}
