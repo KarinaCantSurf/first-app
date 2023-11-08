@@ -4,7 +4,7 @@ import '../hojas-de-estilo/Testimonio.css';
 
 class Testimonio extends React.Component {
    render (){
-    return (
+     return (
     <div className='contenedor-testimonio'>
       <img 
         className='imagen-testimonio'
